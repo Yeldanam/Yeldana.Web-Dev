@@ -1,0 +1,220 @@
+{
+  "info": {
+    "name": "Lab10 Postman Collection",
+    "_postman_id": "7f2a22ce-5ce4-4f4c-a8ee-1f99b8e6f100",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Category",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Phones\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/categories/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "categories",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Categories",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/categories/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "categories",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Product",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"iPhone 15\",\n  \"price\": 450000,\n  \"description\": \"Smartphone\",\n  \"count\": 5,\n  \"is_active\": true,\n  \"category\": 1\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/products/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "products",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Products",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/products/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "products",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Product 1",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/products/1/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "products",
+            "1",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Product 1",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"iPhone 15 Pro\",\n  \"price\": 550000,\n  \"description\": \"Updated smartphone\",\n  \"count\": 8,\n  \"is_active\": true,\n  \"category\": 1\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/products/1/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "products",
+            "1",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Category 1 Products",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/categories/1/products/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "categories",
+            "1",
+            "products",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Product 1",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/products/1/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "products",
+            "1",
+            ""
+          ]
+        }
+      }
+    }
+  ]
+}
